@@ -21,7 +21,7 @@ The software package includes
 
 ## Requirements
 
-* <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python logo" style="width:130px;"> version??
+* <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python logo" style="width:130px;"> 3
  * argparse
  * calendar
  * datetime
@@ -37,13 +37,11 @@ python BTS_main_process.py -s 20180913 -e 20181231
 ```
 
 ## Authors
+* Nicolas Bayer
 * Rico Hengst
 * Lionel Doppler
-* Nicolas Bayer
 
 ## Cooperation
 <img src="doc/TROPOS-Logo_ENG.svg" alt="TROPOS" style="width:100px;">  <img src="doc/Deutscherwetterdienst-logo.svg" alt="DWD" style="width:100px;">
 
 
-## ToDo
-* improve script to read, plot auxiliary data
