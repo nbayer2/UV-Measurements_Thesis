@@ -1,0 +1,70 @@
+{
+    "attributes": {
+        "conventions"    : "  ",
+        "title"          : "UV Radiometer Messuremnts",
+        "contact_person" : "Hartwig Deneke; mail to:deneke@tropos.de",
+	"description": "metadata from uv_js_meta.json and data calculated from BTS2048.py"},
+        
+    "dimensions": {
+        "latitude": 1,
+        "longitude": 1,
+        "seconds": -1,
+	"wvl": -1},  
+          
+    "variables": {
+        "longitude": {
+            "type": "f4",
+            "shape": ["longitude"],
+            "data":[12.928],
+	    "attributes": {"units": "degrees_east"}},
+        "latitude": {
+            "type": "f4",
+            "shape": ["latitude"],
+            "data":[51.526],
+	    "attributes": {"units": "degrees_north"}},
+        "uva": {
+            "type": "f4",
+            "shape": ["longitude","latitude","seconds"],
+            "data":[],
+            "attributes": {
+                "units": "mW*m^{-2}",
+                "long_name": "Ultraviolet-A_index",
+                "standard_name": "Ultraviolet-A_index"}},
+        "uvb": {
+            "type": "f4",
+            "shape": ["longitude","latitude","seconds"],
+            "data":[],
+            "attributes": {
+                "units": "mW*m^{-2}",
+                "long_name": "Ultraviolet-A_index",
+                "standard_name": "Ultraviolet-A_index"}},
+        "uvind": {
+            "type": "f4",
+            "shape": ["longitude","latitude","seconds"],
+            "data":[],
+            "attributes": {
+                "units": "1",
+                "long_name": "ultraviolet_index",
+                "standard_name": "ultraviolet_index"}},
+        "uvint": {
+            "type": "f4",
+            "shape": ["longitude","latitude","seconds"],
+            "data":[],
+            "attributes": {
+                "units": " ",
+                "long_name": "ultraviolet_spectrum_integration",
+                "standard_name": "ultraviolet_spectrum_integration"}},
+	"Height": {
+	    "type" : "f4", 
+	    "shape": ["longitude","latitude"],
+	    "data":[80],
+	    "attributes": {
+                "long_name" : "Level height",
+				"units" : "m"}},
+        "spect": {
+            "type": "f4",
+            "shape": ["longitude","latitude","seconds","wvl"],
+            "data":[],
+            "attributes": {
+                "units": " ",
+                "long_name": "Spectrum"}}}}
