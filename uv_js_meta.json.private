@@ -1,0 +1,144 @@
+{
+    "attributes": {
+        "conventions"    : "CF-1.8",
+        "title"          : "UV Radiometer Messuremnts",
+        "contact_person" : "Name of person; mail to:email",
+        "description": "metadata from uv_js_meta.json and data calculated from BTS2048.py",
+	"serial_number_instrument" : " ",
+	"last_calibration" : " "
+		   },
+        
+    "dimensions": {
+        "time": -1,
+        "wvl": -1
+		   },  
+          
+    "variables": {
+        "lon": {
+            "type": "f4",
+            "shape": [],
+            "data": 12.928,
+            "attributes": {
+		"units": "degrees_east",
+		"long_name" : "Longitude",
+                "standard_name": "Longitude",
+		"valid_range" : [-180.0,180.0]
+			   }
+		},
+        "lat": {
+            "type": "f4",
+            "shape": [],
+            "data": 51.526,
+            "attributes": {
+		"units": "degrees_north",
+		"long_name" : "Latitude",
+                "standard_name": "Latitude",
+		"valid_range" : [-90.0,90.0]
+			   }
+		},
+        "elev": {
+            "type" : "f4", 
+            "shape": [],
+            "data": 86,
+            "attributes": {
+                "long_name" : "Surface Elevation",
+                "units" : "m",
+		"_source" : "this information was taken from https://www.tropos.de/forschung/grossprojekte-infrastruktur-technologie/koordinierte-beobachtungen-und-netzwerke/tropos-forschungsstation-melpitz"
+			   }
+		},
+	"wvl":{
+	    "type" : "f4", 
+            "shape": ["wvl"],
+            "data":[],
+            "attributes": {
+                "long_name" : "Wavelength",
+                "units" : "nm",
+                "standard_name": "radiation_wavelength"
+			   }
+		},
+        "time":{
+            "type": "f8",
+            "shape": ["time"],
+            "data":[],
+            "attributes": {
+		"units": "seconds since 1970-01-01 00:00:00",
+                "standard_name": "Time"
+			   }
+		 },  
+        "uva_irrad": {
+            "type": "f4",
+            "shape": ["time"],
+            "data":[],
+            "attributes": {
+                "units": "W*m^{-2}",
+                "long_name": "Ultraviolet-A Irradiance"
+			   }
+		       },
+        "uvb_irrad": {
+            "type": "f4",
+            "shape": ["time"],
+            "data":[],
+            "attributes": {
+                "units": "W*m^{-2}",
+                "long_name": "Ultraviolet-B Irradiance"
+			   }
+		       },
+        "uv_index": {
+            "type": "f4",
+            "shape": ["time"],
+            "data":[],
+            "attributes": {
+                "units": "1",
+                "long_name": "Ultraviolet Index",
+                "standard_name": "Ultraviolet Index"
+			    }
+		      },
+        "uv_irrad": {
+            "type": "f4",
+            "shape": ["time"],
+            "data":[],
+            "attributes": {
+                "units": "W*m^{-2}",
+                "long_name": "Ultraviolet Irradiance"
+			   }
+		       },
+        "spec_irrad": {
+            "type": "f4",
+            "shape": ["time","wvl"],
+            "data":[],
+            "attributes": {
+                "units": "W*m^{-2}",
+                "long_name": "Spectrum Irradiance"
+			   }
+			  },
+	"szen": {
+            "type": "f4",
+            "shape": [],
+            "data":[],
+            "attributes": {
+                "units": "degree",
+                "long_name": "Solar Zenith Angle",
+		"standard_name": "solar_zenith_angle"
+			    }
+		  },
+	"sazi": {
+            "type": "f4",
+            "shape": [],
+            "data":[],
+            "attributes": {
+                "units": "degree",
+                "long_name": "Solar Azimuth Angle",
+		"standard_name": "solar_azimuth_angle"
+			    }
+		  },
+	"esd":{
+	    "type": "f4",
+            "shape": [],
+            "data":[],
+            "attributes": {
+                "units": "km",
+                "long_name": "Sun-Earth Distance"
+			   }
+		 }
+	}
+}
